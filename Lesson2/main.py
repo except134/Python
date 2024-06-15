@@ -7,7 +7,7 @@ time_for_one_task = total_time_for_all_tasks / count_of_tasks
 # и получается что запятая отделяется пробелами
 print("Курс:", course_name, ", всего задач:", count_of_tasks, 
       ", затрачено часов:", total_time_for_all_tasks, 
-      ", среднее время выполнения: ", time_for_one_task, "часов")
+      ", среднее время выполнения:", time_for_one_task, "часов")
 
 # Способ через f-строку
 print(f"Курс: {course_name}, всего задач: {count_of_tasks}, затрачено часов: {total_time_for_all_tasks}, среднее время выполнения: {time_for_one_task} часов")
