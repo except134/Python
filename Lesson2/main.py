@@ -10,4 +10,7 @@ print("Курс:", course_name, ", всего задач:", count_of_tasks,
       ", среднее время выполнения:", time_for_one_task, "часов")
 
 # Способ через f-строку
-print(f"Курс: {course_name}, всего задач: {count_of_tasks}, затрачено часов: {total_time_for_all_tasks}, среднее время выполнения: {time_for_one_task} часов")
+print(f"Курс: {course_name}, "
+      f"всего задач: {count_of_tasks}, "
+      f"затрачено часов: {total_time_for_all_tasks}, "
+      f"среднее время выполнения: {time_for_one_task} часов")
