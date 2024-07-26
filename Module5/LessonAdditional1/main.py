@@ -118,6 +118,7 @@ ur.register('urban_pythonist', 'iScX4vIJClb9YQavjAgF', 25)
 ur.log_out('urban_pythonist')
 ur.watch_video('Для чего девушкам парень программист?')
 ur.log_in('urban_pythonist', 'iScX4vIJClb9YQavjAgF')
+ur.watch_video('Для чего девушкам парень программист?')
 
 # Проверка входа в другой аккаунт
 ur.register('vasya_pupkin', 'F8098FM8fjm9jmi', 55)
