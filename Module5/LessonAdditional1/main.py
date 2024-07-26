@@ -77,13 +77,17 @@ class UrTube:
             if i.contain(name):
                 if i.checkpassword(password):
                     self.current_user = i
+                    print(f"Пароль для пользователя {name} верный!")  
+                    return
                 else:
                     print(f"Пароль для пользователя {name} не верный!")  
+                    return
         
-    def log_out(self):
+    def log_out(self, name):
         for i in self.users:
-            if i.contain(name):
-                del i
+            if i.contain(name) and self.current_user == i:
+                print(f"Выхожу из под пользователя {name}!")  
+                self.current_user = []
                 return
 
     def register(self, name, password, age):
@@ -111,8 +115,9 @@ ur.watch_video('Для чего девушкам парень программи
 ur.register('vasya_pupkin', 'lolkekcheburek', 13)
 ur.watch_video('Для чего девушкам парень программист?')
 ur.register('urban_pythonist', 'iScX4vIJClb9YQavjAgF', 25)
-ur.log_in('urban_pythonist', 'iScX4vIJClb9YQavjAgF')
+ur.log_out('urban_pythonist')
 ur.watch_video('Для чего девушкам парень программист?')
+ur.log_in('urban_pythonist', 'iScX4vIJClb9YQavjAgF')
 
 # Проверка входа в другой аккаунт
 ur.register('vasya_pupkin', 'F8098FM8fjm9jmi', 55)
