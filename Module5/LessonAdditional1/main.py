@@ -72,11 +72,18 @@ class UrTube:
                         return
             print("Такого видео не существует!")  
         
+    def log_out(self):
+        for i in self.users:
+            if i.contain(name):
+                del i
+                return
+
     def register(self, name, password, age):
         for i in self.users:
             if i.contain(name):
                 print(f"Пользователь {name} уже существует!")  
                 return
+                
         self.users.append(User(name, password, age))
         self.current_user = self.users[len(self.users) - 1]
     
