@@ -1,6 +1,4 @@
-from operator import contains
-from time import sleep
-import time 
+import time
 
 class User:
     def __init__(self, name, password, age):
