@@ -72,6 +72,14 @@ class UrTube:
                         return
             print("Такого видео не существует!")  
         
+    def log_in(self, name, password):
+        for i in self.users:
+            if i.contain(name):
+                if i.checkpassword(password):
+                    self.current_user = i
+                else:
+                    print(f"Пароль для пользователя {name} не верный!")  
+        
     def log_out(self):
         for i in self.users:
             if i.contain(name):
@@ -103,6 +111,7 @@ ur.watch_video('Для чего девушкам парень программи
 ur.register('vasya_pupkin', 'lolkekcheburek', 13)
 ur.watch_video('Для чего девушкам парень программист?')
 ur.register('urban_pythonist', 'iScX4vIJClb9YQavjAgF', 25)
+ur.log_in('urban_pythonist', 'iScX4vIJClb9YQavjAgF')
 ur.watch_video('Для чего девушкам парень программист?')
 
 # Проверка входа в другой аккаунт
