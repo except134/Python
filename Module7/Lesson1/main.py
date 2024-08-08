@@ -7,45 +7,33 @@ class Product:
         self.category = category
 
     def __str__(self):
-        return self.name +', ' + str(self.weight) + ', ' + self.category 
+        return f"{self.name}, {str(self.weight)}, {self.category}" 
 
 class Shop:
     __file_name = "products.txt"
     
     def __init__(self):
         self.products = []
-        try:
-            file = open(Shop.__file_name, mode='r')
-        except:
-            return
-        
-        line = True
-        while line:
-            line = file.readline()
-            products = self.get_products()
-            splitted = line.split(sep=',');
-            if not splitted[0] in products:
-                self.products.append(line)
-            else:   
-                print(f"Продукт {line[0]} уже есть в магазине")
-        file.close()
 
     def get_products(self):
-        return self.products
+        try:
+            file = open(Shop.__file_name, mode='r')
+            ret = file.read()
+            file.close()
+            return str(ret)
+        except:
+            return ""
 
     def add(self, *products):
-        for name in products:
-            line = str(name)
-            products = self.get_products()
-            splitted = line.split(sep=',');
-            if splitted[0] in products:
-                print(f"Продукт {name} уже есть в магазине")
+        file = open(Shop.__file_name, mode='a')
+        store_products = self.get_products()
+        for product in products:
+            if product.name not in store_products:
+                file.write(str(product) + '\n')
+                store_products += product.name + '\n'
             else:
-                file = open(Shop.__file_name, mode='a')
-                self.products.append(name)
-                file.writelines(str(name))
-                file.close()
-        
+                print(f"Продукт {product.name} уже есть в магазине")
+        file.close()
 
 s1 = Shop()
 p1 = Product('Potato', 50.5, 'Vegetables')
