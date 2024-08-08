@@ -17,7 +17,7 @@ class Shop:
 
     def get_products(self):
         try:
-            file = open(Shop.__file_name, mode='r')
+            file = open(self.__file_name, mode='r')
             ret = file.read()
             file.close()
             return str(ret)
@@ -25,7 +25,7 @@ class Shop:
             return ""
 
     def add(self, *products):
-        file = open(Shop.__file_name, mode='a')
+        file = open(self.__file_name, mode='a')
         store_products = self.get_products()
         for product in products:
             if product.name not in store_products:
