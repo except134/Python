@@ -1,0 +1,179 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>25768f4b-2070-4a06-a785-adfb425cc1f1</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Examples\MyTest1.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>ExceptEngine</Name>
+    <RootNamespace>ExceptEngine</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>Global|PythonCore|3.12</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CoreExt\Camera.py" />
+    <Compile Include="CoreExt\Group.py" />
+    <Compile Include="CoreExt\Mesh.py" />
+    <Compile Include="CoreExt\Object3d.py" />
+    <Compile Include="CoreExt\Renderer.py" />
+    <Compile Include="CoreExt\RenderTarget.py" />
+    <Compile Include="CoreExt\Scene.py" />
+    <Compile Include="CoreExt\Texture.py" />
+    <Compile Include="Core\Attribute.py" />
+    <Compile Include="Core\BaseGlut.py" />
+    <Compile Include="Core\BasePygame.py" />
+    <Compile Include="Core\Input.py" />
+    <Compile Include="Core\Math.py" />
+    <Compile Include="Core\Matrix.py" />
+    <Compile Include="Core\Uniform.py" />
+    <Compile Include="Core\Utils.py" />
+    <Compile Include="Effects\AdditiveBlend.py" />
+    <Compile Include="Effects\BrightFilter.py" />
+    <Compile Include="Effects\ColorReduce.py" />
+    <Compile Include="Effects\HorizontalBlur.py" />
+    <Compile Include="Effects\Invert.py" />
+    <Compile Include="Effects\Pixelate.py" />
+    <Compile Include="Effects\Template.py" />
+    <Compile Include="Effects\Tint.py" />
+    <Compile Include="Effects\VerticalBlur.py" />
+    <Compile Include="Effects\Vignette.py" />
+    <Compile Include="Examples\example-2-01-empty-window.py" />
+    <Compile Include="Examples\example-2-02-single-point.py" />
+    <Compile Include="Examples\example-2-03-hexagon.py" />
+    <Compile Include="Examples\example-2-04-shapes.py" />
+    <Compile Include="Examples\example-2-05-hexagon-with-vertex-colors.py" />
+    <Compile Include="Examples\example-2-06-two-triangles.py" />
+    <Compile Include="Examples\example-2-07-animation-1.py" />
+    <Compile Include="Examples\example-2-08-animation-2.py" />
+    <Compile Include="Examples\example-2-09-color-changing.py" />
+    <Compile Include="Examples\example-2-10-keys-down-up-press.py" />
+    <Compile Include="Examples\example-2-11-key-control.py" />
+    <Compile Include="Examples\example-3-global-and-local-transformations.py" />
+    <Compile Include="Examples\example-4-1-spinning-cube.py" />
+    <Compile Include="Examples\example-4-2-custom-geometry.py" />
+    <Compile Include="Examples\example-4-3-sine.py" />
+    <Compile Include="Examples\example-4-4-sphere.py" />
+    <Compile Include="Examples\example-4-5-rippling-effect.py" />
+    <Compile Include="Examples\example-4-6-axes-and-xy-grid.py" />
+    <Compile Include="Examples\example-4-7-box-on-grid.py" />
+    <Compile Include="Examples\example-5-01-textured-square.py" />
+    <Compile Include="Examples\example-5-02-textured-skysphere-and-grass.py" />
+    <Compile Include="Examples\example-5-03-rippling-effect-in-texture.py" />
+    <Compile Include="Examples\example-5-04-blending-between-textures.py" />
+    <Compile Include="Examples\example-5-05-distorting-texture.py" />
+    <Compile Include="Examples\example-5-06-1-procedural-textures-smoothed-random.py" />
+    <Compile Include="Examples\example-5-06-2-procedural-textures-clouds.py" />
+    <Compile Include="Examples\example-5-06-3-procedural-textures-lava.py" />
+    <Compile Include="Examples\example-5-06-4-procedural-textures-marble.py" />
+    <Compile Include="Examples\example-5-06-5-procedural-textures-wood-grain.py" />
+    <Compile Include="Examples\example-5-07-text-texture.py" />
+    <Compile Include="Examples\example-5-08-billboarding-by-look-at.py" />
+    <Compile Include="Examples\example-5-09-billboarding-by-spritesheet.py" />
+    <Compile Include="Examples\example-5-10-heads-up-display.py" />
+    <Compile Include="Examples\example-5-11-render-targets.py" />
+    <Compile Include="Examples\example-5-12-1-postprocessing-color-tinting.py" />
+    <Compile Include="Examples\example-5-12-2-postprocessing-color-inversion.py" />
+    <Compile Include="Examples\example-5-12-3-postprocessing-pixelation.py" />
+    <Compile Include="Examples\example-5-12-4-postprocessing-color-reducing.py" />
+    <Compile Include="Examples\example-5-12-5-postprocessing-vignette.py" />
+    <Compile Include="Examples\example-5-12-6-postprocessing-compound-effect.py" />
+    <Compile Include="Examples\example-6-1-1-lighted-spheres.py" />
+    <Compile Include="Examples\example-6-1-2-dynamical-lighting.py" />
+    <Compile Include="Examples\example-6-2-bump-mapping.py" />
+    <Compile Include="Examples\example-6-2-bump-mapping2.py" />
+    <Compile Include="Examples\example-6-3-1-postprocessing-bright-filter.py" />
+    <Compile Include="Examples\example-6-3-2-postprocessing-blur.py" />
+    <Compile Include="Examples\example-6-3-3-postprocessing-additive-blend.py" />
+    <Compile Include="Examples\example-6-3-4-postprocessor-light-bloom.py" />
+    <Compile Include="Examples\example-6-4-postprocessing-glow.py" />
+    <Compile Include="Examples\example-6-5-shadows.py" />
+    <Compile Include="Examples\example-template.py" />
+    <Compile Include="Examples\MyTest1.py" />
+    <Compile Include="Extras\Axes.py" />
+    <Compile Include="Extras\DirectionalLight.py" />
+    <Compile Include="Extras\Grid.py" />
+    <Compile Include="Extras\MovementRig.py" />
+    <Compile Include="Extras\PointLight.py" />
+    <Compile Include="Extras\Postprocessor.py" />
+    <Compile Include="Extras\TextTexture.py" />
+    <Compile Include="Geometry\Box.py" />
+    <Compile Include="Geometry\Cone.py" />
+    <Compile Include="Geometry\Cylinder.py" />
+    <Compile Include="Geometry\Cylindrical.py" />
+    <Compile Include="Geometry\Ellipsoid.py" />
+    <Compile Include="Geometry\Geometry.py" />
+    <Compile Include="Geometry\Parametric.py" />
+    <Compile Include="Geometry\Plane.py" />
+    <Compile Include="Geometry\Polygon.py" />
+    <Compile Include="Geometry\Prism.py" />
+    <Compile Include="Geometry\Pyramid.py" />
+    <Compile Include="Geometry\Rectangle.py" />
+    <Compile Include="Geometry\Sphere.py" />
+    <Compile Include="Geometry\Teapot.py" />
+    <Compile Include="Light\Ambient.py" />
+    <Compile Include="Light\Directional.py" />
+    <Compile Include="Light\Light.py" />
+    <Compile Include="Light\Point.py" />
+    <Compile Include="Light\Shadow.py" />
+    <Compile Include="Main.py" />
+    <Compile Include="Material\Basic.py" />
+    <Compile Include="Material\Depth.py" />
+    <Compile Include="Material\Flat.py" />
+    <Compile Include="Material\Lambert.py" />
+    <Compile Include="Material\Lighted.py" />
+    <Compile Include="Material\Line.py" />
+    <Compile Include="Material\Material.py" />
+    <Compile Include="Material\Phong.py" />
+    <Compile Include="Material\Point.py" />
+    <Compile Include="Material\Sprite.py" />
+    <Compile Include="Material\Surface.py" />
+    <Compile Include="Material\Texture.py" />
+    <Compile Include="Renderer\Color.py" />
+    <Compile Include="Renderer\ConstantBuffer.py" />
+    <Compile Include="Renderer\IndexBuffer.py" />
+    <Compile Include="Renderer\InputLayout.py" />
+    <Compile Include="Renderer\OpenGL\ConstantBufferGL.py" />
+    <Compile Include="Renderer\OpenGL\IndexBufferGL.py" />
+    <Compile Include="Renderer\OpenGL\InputLayoutGL.py" />
+    <Compile Include="Tests\MathTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.12" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CoreExt\" />
+    <Folder Include="Core\" />
+    <Folder Include="Effects\" />
+    <Folder Include="Examples\" />
+    <Folder Include="Extras\" />
+    <Folder Include="Geometry\" />
+    <Folder Include="Light\" />
+    <Folder Include="Material\" />
+    <Folder Include="Renderer\" />
+    <Folder Include="Renderer\OpenGL\" />
+    <Folder Include="Tests\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
