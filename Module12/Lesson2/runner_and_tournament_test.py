@@ -4,38 +4,38 @@ import runner_and_tournament as rat
 class TournamentTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.all_results = dict()
-
-    def setUp(self):
-        self.runner1 = rat.Runner('Усэйн', 10)
-        self.runner2 = rat.Runner('Андрей', 9)
-        self.runner3 = rat.Runner('Ник', 3)
+        cls.all_results = {}
 
     @classmethod
     def tearDownClass(cls):
-        for d in cls.all_results.values():
-            new_dict = {}
-            for key, value in d.items():
-                new_dict[key] = value.name
-            print(new_dict)
+        for i in cls.all_results.values():
+            d = {}
+            for key, value in i.items():
+                d[key] = value.name
+            print(d)
+
+    def setUp(self):
+        self.runUsain = rat.Runner('Усэйн', 10)
+        self.runAndrew = rat.Runner('Андрей', 9)
+        self.runNick = rat.Runner('Ник', 3)
  
     def test_tournament1(self):
-        tournament = rat.Tournament(90, self.runner1, self.runner3)
-        self.all_results['test_tournament1'] = tournament.start()
-        self.assertTrue((self.all_results.get('test_tournament1')).get(max(self.all_results.get('test_tournament1')))
-                        == self.runner3.name)
+        t = rat.Tournament(90, self.runUsain, self.runNick)
+        res = t.start()
+        self.all_results[len(self.all_results) + 1] = res
+        self.assertTrue(res[max(res.keys())] == self.runNick.name)
 
     def test_tournament2(self):
-        tournament = rat.Tournament(90, self.runner2, self.runner3)
-        self.all_results['test_tournament2'] = tournament.start()
-        self.assertTrue((self.all_results.get('test_tournament2')).get(max(self.all_results.get('test_tournament2')))
-                        == self.runner3.name)
+        t = rat.Tournament(90, self.runAndrew, self.runNick)
+        res = t.start()
+        self.all_results[len(self.all_results) + 1]  = res
+        self.assertTrue(res[max(res.keys())] == self.runNick.name)
 
     def test_tournament3(self):
-        tournament = rat.Tournament(90, self.runner1, self.runner2, self.runner3)
-        self.all_results['test_tournament3'] = tournament.start()
-        self.assertTrue((self.all_results.get('test_tournament3')).get(max(self.all_results.get('test_tournament3')))
-                        == self.runner3.name)
+        t = rat.Tournament(90, self.runUsain, self.runAndrew, self.runNick)
+        res = t.start()
+        self.all_results[len(self.all_results) + 1] = res
+        self.assertTrue(res[max(res.keys())] == self.runNick.name)
 
 if __name__ == '__main__':
     unittest.main()
