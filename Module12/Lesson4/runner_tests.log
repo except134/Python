@@ -1,0 +1,15 @@
+2024-10-05 10:21:48,218 | INFO | "test_challenge" выполнен успешно
+2024-10-05 10:21:48,219 | WARNING | Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "I:\Prj\Learning\Python\Module12\Lesson4\runner_and_tournament_test.py", line 27, in test_run
+    runner = rat.Runner(10)
+  File "I:\Prj\Learning\Python\Module12\Lesson4\runner_and_tournament.py", line 8, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+2024-10-05 10:21:48,221 | WARNING | Неверная скорость для Runner
+Traceback (most recent call last):
+  File "I:\Prj\Learning\Python\Module12\Lesson4\runner_and_tournament_test.py", line 14, in test_walk
+    walker = rat.Runner("Walker", -5)
+  File "I:\Prj\Learning\Python\Module12\Lesson4\runner_and_tournament.py", line 15, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
