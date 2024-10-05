@@ -18,8 +18,6 @@ class RunnerTest(unittest.TestCase):
             self.assertEqual(walker.distance, 50)
         except(ValueError):
             logging.warning('Неверная скорость для Runner', exc_info=True)
-        except(TypeError):
-            logging.warning('Неверный тип данных для объекта Runner', exc_info=True)
 
     @unittest.skipIf(is_frozen, 'Тесты в этом кейсе заморожены')
     def test_run(self):
@@ -29,25 +27,17 @@ class RunnerTest(unittest.TestCase):
                 runner.run()
             logging.info('"test_run" выполнен успешно')
             self.assertEqual(runner.distance, 100)
-        except(ValueError):
-            logging.warning('Неверная скорость для Runner', exc_info=True)
         except(TypeError):
             logging.warning('Неверный тип данных для объекта Runner', exc_info=True)
 
     @unittest.skipIf(is_frozen, 'Тесты в этом кейсе заморожены')
     def test_challenge(self):
-        try:
-            r1 = rat.Runner("R1")
-            r2 = rat.Runner("R2")
-            for _ in range(10):
-                r1.run()
-                r2.walk()
-            logging.info('"test_challenge" выполнен успешно')
-            self.assertNotEqual(r1.distance, r2.distance)
-        except(ValueError):
-            logging.warning('Неверная скорость для Runner', exc_info=True)
-        except(TypeError):
-            logging.warning('Неверный тип данных для объекта Runner', exc_info=True)
+        r1 = rat.Runner("R1")
+        r2 = rat.Runner("R2")
+        for _ in range(10):
+            r1.run()
+            r2.walk()
+        self.assertNotEqual(r1.distance, r2.distance)
 
 if __name__ == '__main__':
     unittest.main()
