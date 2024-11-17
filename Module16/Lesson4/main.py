@@ -22,7 +22,7 @@ async def add_user(username: Annotated[str, Path(min_length=5, max_length=20, de
                    age: Annotated[int, Path(ge=18, le=120, description='Enter age', examples=24)]) -> User:
     try:
         if users:
-             user_id = len(users) + 1
+             user_id = users[-1].id + 1
         else:
             user_id = 1
 
