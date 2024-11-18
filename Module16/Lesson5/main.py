@@ -5,6 +5,7 @@ from fastapi.responses import HTMLResponse
 from typing import Annotated, List
 from pydantic import BaseModel
 from fastapi.templating import Jinja2Templates
+import uvicorn
 
 templates = Jinja2Templates(directory="templates")
 
@@ -62,5 +63,7 @@ async def delete_user(user_id: Annotated[int, Path(description='Enter user ID', 
 
     raise HTTPException(status_code=404, detail="User was not found")
 
+if __name__ == '__main__':
+    uvicorn.run(app, host="127.0.0.1", port=8000)
 
 
