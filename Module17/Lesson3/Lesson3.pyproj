@@ -26,6 +26,7 @@
     <Compile Include="Backend\db.py" />
     <Compile Include="main.py" />
     <Compile Include="Migrations\env.py" />
+    <Compile Include="Migrations\versions\8361d614ab14_initial_migration.py" />
     <Compile Include="Models\task.py" />
     <Compile Include="Models\user.py" />
     <Compile Include="Models\__init__.py" />
@@ -58,6 +59,7 @@
     <Content Include="Migrations\README" />
     <Content Include="Migrations\script.py.mako" />
     <Content Include="requirements.txt" />
+    <Content Include="taskmanager.db" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
