@@ -1,0 +1,94 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>977672a3-b1f6-4cbf-be89-bf19aff8b82e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>UrbanDjango\manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Lesson1</Name>
+    <RootNamespace>Lesson1</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>runserver</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Lesson1.py" />
+    <Compile Include="UrbanDjango\example1\admin.py" />
+    <Compile Include="UrbanDjango\example1\apps.py" />
+    <Compile Include="UrbanDjango\example1\migrations\__init__.py" />
+    <Compile Include="UrbanDjango\example1\models.py" />
+    <Compile Include="UrbanDjango\example1\tests.py" />
+    <Compile Include="UrbanDjango\example1\views.py" />
+    <Compile Include="UrbanDjango\example1\__init__.py" />
+    <Compile Include="UrbanDjango\example2\admin.py" />
+    <Compile Include="UrbanDjango\example2\apps.py" />
+    <Compile Include="UrbanDjango\example2\migrations\__init__.py" />
+    <Compile Include="UrbanDjango\example2\models.py" />
+    <Compile Include="UrbanDjango\example2\tests.py" />
+    <Compile Include="UrbanDjango\example2\views.py" />
+    <Compile Include="UrbanDjango\example2\__init__.py" />
+    <Compile Include="UrbanDjango\example3\admin.py" />
+    <Compile Include="UrbanDjango\example3\apps.py" />
+    <Compile Include="UrbanDjango\example3\migrations\__init__.py" />
+    <Compile Include="UrbanDjango\example3\models.py" />
+    <Compile Include="UrbanDjango\example3\tests.py" />
+    <Compile Include="UrbanDjango\example3\views.py" />
+    <Compile Include="UrbanDjango\example3\__init__.py" />
+    <Compile Include="UrbanDjango\manage.py" />
+    <Compile Include="UrbanDjango\UrbanDjango\asgi.py" />
+    <Compile Include="UrbanDjango\UrbanDjango\settings.py" />
+    <Compile Include="UrbanDjango\UrbanDjango\urls.py" />
+    <Compile Include="UrbanDjango\UrbanDjango\wsgi.py" />
+    <Compile Include="UrbanDjango\UrbanDjango\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>0.0</Version>
+      <Description>env (Python 3.12 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+    <Content Include="UrbanDjango\UrbanDjango\__pycache__\settings.cpython-312.pyc" />
+    <Content Include="UrbanDjango\UrbanDjango\__pycache__\__init__.cpython-312.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UrbanDjango\" />
+    <Folder Include="UrbanDjango\example1\" />
+    <Folder Include="UrbanDjango\example1\migrations\" />
+    <Folder Include="UrbanDjango\example2\" />
+    <Folder Include="UrbanDjango\example2\migrations\" />
+    <Folder Include="UrbanDjango\example3\" />
+    <Folder Include="UrbanDjango\example3\migrations\" />
+    <Folder Include="UrbanDjango\UrbanDjango\" />
+    <Folder Include="UrbanDjango\UrbanDjango\__pycache__\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
