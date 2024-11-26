@@ -26,7 +26,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Lesson1.py" />
     <Compile Include="UrbanDjango\example1\admin.py" />
     <Compile Include="UrbanDjango\example1\apps.py" />
     <Compile Include="UrbanDjango\example1\migrations\__init__.py" />
