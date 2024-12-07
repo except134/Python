@@ -1,0 +1,17 @@
+{% extends "menu.html" %}
+
+{% block content %}
+    {% if gameslist %}
+    <ul>
+    {% for key, value in gameslist.items %}
+        {% for game in value %}
+            <li>{{ game }}<button>Купить</button></li>
+        {% endfor %}
+    {% endfor %}
+    </ul>
+    {% else %}
+        <p>В магазине нет игр.</p>
+    {% endif %}
+    <button onclick="document.location='/platform/'">Вернуться обратно</button>
+{% endblock %}
+
