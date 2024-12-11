@@ -1,0 +1,15 @@
+{% extends "task1/menu.html" %}
+
+{% block content %}
+    {% if gameslist %}
+<ul>
+    {% for key, value in gameslist.items %}
+    <li>{{ key }} | {{ value.desc }}. Стоимость: {{ value.cost }}<button>Купить</button></li>
+    {% endfor %}
+</ul>
+    {% else %}
+<p>В магазине нет игр.</p>
+    {% endif %}
+<button onclick="document.location='/'">Вернуться обратно</button>
+{% endblock %}
+
