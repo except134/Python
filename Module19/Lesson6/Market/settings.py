@@ -87,8 +87,6 @@ DATABASES = {
         'PASSWORD': '1',
         'HOST': '127.0.0.1',
         'PORT': '5432',    
-        'CHARSET': 'UTF8',
-        'COLLATION': 'UTF8',
         'OPTIONS': {
             'client_encoding': 'UTF8',
         },  
