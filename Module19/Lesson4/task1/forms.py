@@ -27,25 +27,4 @@ class UserRegister(forms.Form):
         widget=forms.NumberInput(attrs={'placeholder': 'Баланс'})
     )
 
-class AddGame(forms.Form):
-    title = forms.CharField(
-        max_length=128,
-        label="Наименование",
-        widget=forms.TextInput(attrs={'placeholder': 'Наименование'})
-    )
-    cost = forms.DecimalField(
-        label="Введите цену",
-        widget=forms.NumberInput(attrs={'placeholder': 'Цена'})
-    )
-    size = forms.DecimalField(
-        label="Введите размер",
-        widget=forms.NumberInput(attrs={'placeholder': 'Размер'})
-    )
-    description = forms.CharField(
-        max_length=1024,
-        label="Описание",
-        widget=forms.TextInput(attrs={'placeholder': 'Описание'})
-    )
-    age_limited = forms.BooleanField(required=False
-    )
 

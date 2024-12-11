@@ -129,19 +129,5 @@ class carttpl(TemplateView):
         "header": header
     }
 
-def add_game(request):
-    info = {}
-    form = AddGame(request.POST or None)
 
-    if form.is_valid():
-        title = form.cleaned_data['title']
-        cost = form.cleaned_data['cost']
-        size = form.cleaned_data['size']
-        description = form.cleaned_data['description']
-        age_limited = form.cleaned_data['age_limited']
-
-        Game.objects.create(title=title, cost=cost, size=size, description=description, age_limited=age_limited)
-
-    info['form'] = form
-    return render(request, 'task1/admin.html', info)
 

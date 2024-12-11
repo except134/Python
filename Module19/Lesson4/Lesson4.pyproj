@@ -61,7 +61,6 @@
   <ItemGroup>
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
-    <Content Include="task1\templates\task1\admin.html" />
     <Content Include="task1\templates\task1\cart.html" />
     <Content Include="task1\templates\task1\games.html" />
     <Content Include="task1\templates\task1\createdb.html" />

@@ -9,6 +9,5 @@ urlpatterns = [
     path('', platformtpl.as_view(), platformtpl.context),
     path('platform/games/', gamestpl.as_view(), gamestpl.context),
     path('platform/cart/', carttpl.as_view(), carttpl.context),
-    path('platform/admin/', views.add_game, name='add_game'),
 ]
 
