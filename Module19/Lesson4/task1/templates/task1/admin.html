@@ -1,0 +1,12 @@
+{% extends "task1/menu.html" %}
+
+{% block content %}
+    {% if form %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Добавить</button>
+    <button onclick="document.location='/'">Вернуться обратно</button>
+</form>
+    {% endif %}
+{% endblock %}
