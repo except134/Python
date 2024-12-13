@@ -17,12 +17,15 @@ class UserRegister(forms.Form):
         widget=forms.PasswordInput(attrs={'placeholder': 'Повтор пароля'})
     )
     age = forms.IntegerField(
-        max_value=999,
         label="Введите свой возраст",
-        widget=forms.NumberInput(attrs={'placeholder': 'Возраст'})
+        widget=forms.NumberInput(attrs={'placeholder': 'Возраст'}),
+        min_value=14,
+        max_value=150
     )
     balance = forms.DecimalField(
         label="Введите ваш баланс",
-        widget=forms.NumberInput(attrs={'placeholder': 'Баланс'})
+        widget=forms.NumberInput(attrs={'placeholder': 'Баланс'}),
+        required=False,
+        min_value=0
     )
 

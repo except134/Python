@@ -1,0 +1,40 @@
+﻿{% load static %}
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/fancyInput.css' %}" type="text/css">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--
+    <div id='wrap'>
+        <div id='content'>
+            <form action="" method="get">
+                <section class='input'>
+                    <div>
+                        <input type='text' placeholder='Введите ИНН'>
+                        <button type="submit">Поиск</button>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </div>
+    -->
+    <div class="search_block">
+        <form>
+            <input type="text" name="text" class="search" placeholder="Поиск">
+            <input type="submit" name="submit" class="submit" value="">
+        </form>
+    </div>
+    <script src="{% static 'js/fancyInput.js' %}"></script>
+    <script>
+        $('section :input').val('').fancyInput()[0].focus();
+    </script>
+    {{ content }}
+
+</body>
+</html>

@@ -1,10 +1,14 @@
 from django.db import models
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 class Buyer(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=64)
-    balance = models.DecimalField(max_digits=10, decimal_places=2)
-    age = models.IntegerField()
+    balance = models.DecimalField(max_digits=10, decimal_places=2, blank=True, default=0)
+    age = models.PositiveIntegerField(validators=[
+            MaxValueValidator(150),
+            MinValueValidator(14)
+        ])
     password = models.CharField(max_length=64, blank=True)
 
     def __str__(self):

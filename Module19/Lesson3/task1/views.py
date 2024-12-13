@@ -47,8 +47,6 @@ def check_errors(username, password, repeat_password, age, balance, info):
         info['error'] = 'Вы должны быть старше 18'
     elif user and username == user.name:
         info['error'] = 'Пользователь уже существует'
-    elif balance < 0:
-        info['error'] = 'Баланс не может быть отрицательным'
     else:
         info['success'] = f'Приветствуем, {username}!'
         ret = True
@@ -83,6 +81,9 @@ def sign_up_by_django(request):
         balance = form.cleaned_data['balance']
 
         ret = check_errors(username, password, repeat_password, age, balance, info)
+
+        if balance == None:
+            balance = 0
 
         if ret == True:
             Buyer.objects.create(name=username, balance=balance, age=age, password=password)
