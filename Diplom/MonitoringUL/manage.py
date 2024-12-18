@@ -8,6 +8,7 @@ Command-line utility for administrative tasks.
 
 import os
 import sys
+from monitoring.getfiles import *
 
 if __name__ == '__main__':
     os.environ.setdefault(
@@ -21,4 +22,7 @@ if __name__ == '__main__':
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
+
+    get_all_files()
+
     execute_from_command_line(sys.argv)

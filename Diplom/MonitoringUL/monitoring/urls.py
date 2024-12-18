@@ -3,6 +3,6 @@ from . import views
 from .views import *
 
 urlpatterns = [
-    path('', maintpl.as_view(), maintpl.context),
+    path('', views.get_inn_from_html, name='get_inn_from_html'),
 ]
 

@@ -1,7 +1,7 @@
 ﻿{% load static %}
 <html>
 <head>
-    <title></title>
+    <title> {{title}} </title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'css/fancyInput.css' %}" type="text/css">
@@ -10,30 +10,32 @@
 </head>
 
 <body>
-    <!--
     <div id='wrap'>
         <div id='content'>
-            <form action="" method="get">
+            <form action="" method="post">
+                {% csrf_token %}
                 <section class='input'>
                     <div>
-                        <input type='text' placeholder='Введите ИНН'>
+                        <input type='text' id='inn' name='inn' placeholder='Введите ИНН'>
+                    </div>
+                    <div>
                         <button type="submit">Поиск</button>
                     </div>
                 </section>
             </form>
+            {% for key, val in temp_results.items %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ val }}</td>
+            </tr>
+            {% endfor %}
         </div>
-    </div>
-    -->
-    <div class="search_block">
-        <form>
-            <input type="text" name="text" class="search" placeholder="Поиск">
-            <input type="submit" name="submit" class="submit" value="">
-        </form>
     </div>
     <script src="{% static 'js/fancyInput.js' %}"></script>
     <script>
         $('section :input').val('').fancyInput()[0].focus();
     </script>
+
     {{ content }}
 
 </body>

@@ -39,7 +39,19 @@
     <Compile Include="MonitoringUL\wsgi.py" />
     <Compile Include="monitoring\admin.py" />
     <Compile Include="monitoring\apps.py" />
+    <Compile Include="monitoring\config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="monitoring\downloader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="monitoring\excelutils.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="monitoring\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="monitoring\getfiles.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="monitoring\management\commands\start_bot.py">
@@ -53,6 +65,9 @@
     </Compile>
     <Compile Include="monitoring\migrations\__init__.py" />
     <Compile Include="monitoring\models.py" />
+    <Compile Include="monitoring\parser.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="monitoring\tests.py" />
     <Compile Include="monitoring\urls.py">
       <SubType>Code</SubType>
