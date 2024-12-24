@@ -1,6 +1,7 @@
 # python -m uvicorn main:app
 
 from fastapi import FastAPI
+import uvicorn
 
 app = FastAPI()
 
@@ -22,3 +23,6 @@ async def user_id_page(user_id) -> str:
 @app.get("/user")
 async def user_page(username: str = "Николай", age: int = "46") -> str:
     return (f"Информация о пользователе. Имя: {username}, возраст: {age}")
+
+if __name__ == '__main__':
+    uvicorn.run(app, host="127.0.0.1", port=8000)

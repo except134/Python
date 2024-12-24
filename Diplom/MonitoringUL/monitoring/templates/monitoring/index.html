@@ -22,13 +22,13 @@
                         <button type="submit">Поиск</button>
                     </div>
                 </section>
+                {% for key, val in temp_results.items %}
+                <tr>
+                    <td>{{ key }}</td>
+                    <td>{{ val }}</td>
+                </tr>
+                {% endfor %}
             </form>
-            {% for key, val in temp_results.items %}
-            <tr>
-                <td>{{ key }}</td>
-                <td>{{ val }}</td>
-            </tr>
-            {% endfor %}
         </div>
     </div>
     <script src="{% static 'js/fancyInput.js' %}"></script>
