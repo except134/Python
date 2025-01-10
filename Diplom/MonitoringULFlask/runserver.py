@@ -8,7 +8,7 @@ from MonitoringULFlask.tgbot import *
 from threading import Thread, Lock
 
 def start_tg_bot():
-    bot.polling(none_stop=True)
+    bot.polling(none_stop=True, interval=0)
 
 def start_web_app(host: str | None = None, port: int | None = None):
     app.run(host=HOST, port=PORT)
@@ -20,13 +20,6 @@ if __name__ == '__main__':
     except ValueError:
         PORT = 5555
 
-#    th1 = Thread(target=start_tg_bot)
     th2 = Thread(target=start_web_app, args=(HOST, PORT))
-
-#    th1.start()
     th2.start()
-
-#    th1.join()
-#    th2.join()
-
-    bot.polling(none_stop=True, interval=0)
+    start_tg_bot()

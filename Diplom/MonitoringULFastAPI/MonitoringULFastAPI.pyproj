@@ -23,7 +23,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="downloader.py" />
+    <Compile Include="excelutils.py" />
+    <Compile Include="getfiles.py" />
     <Compile Include="main.py" />
+    <Compile Include="parser.py" />
+    <Compile Include="settings.py" />
+    <Compile Include="tgbot.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

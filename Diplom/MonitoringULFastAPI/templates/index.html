@@ -1,59 +1,48 @@
 {% extends "layout.html" %}
 
-{% block content %}
-
-{% from "_formhelpers.html" import render_field %}
-<form method="post">
-    <dl>
-        <p>
-            <h4>Введите ИНН:</h4>
-            {{ render_field(form.search) }}
-        </p>
-    </dl>
-    <p>
-        <input type="submit" value="Поиск">
-    </p>
-</form>
-
-{% with messages = get_flashed_messages() %}
-  {% if messages %}
-<ul class="flashes">
-    {% for message in messages %}
-    <p></p>
-    <h1>
-    <li>{{ message }}</li>
-    </h1>
-    {% endfor %}
-</ul>
-  {% endif %}
-{% endwith %}
-
-{% if results %}
-<div class="px-5 mx-5">
-    <h1>Результаты:</h1>
-
-    <h4>
-        <table class="table table-striped table-bordered">
-            <thead>
-                <tr>
-                    <b>
-                    <th>База данных</th>
-                    <th>Результат</th>
-                    </b>
-                </tr>
-            </thead>
-
-            <tbody>
-                {% for key, val in results.items() %}
-                <tr>
-                    <td>{{key}}</td>
-                    <td>{{val}}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </h4>
-</div>    
-{% endif %}
-
+{% block title %}
+{{ title }}
 {% endblock %}
+
+{% block content %}
+<main>
+    <form id="searchForm">
+        <h4>Введите ИНН:</h4>
+
+        <div class="form-group">
+            <input type="text" id="INN" name="INN" value="{{ INN }}" required placeholder="Введите ИНН">
+        </div>
+        <p></p>
+        <button type="submit" class="btn">Найти</button>
+    </form>
+    {% if results %}
+    <div class="px-5 mx-5">
+        <h1>Результаты:</h1>
+
+        <h4>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <b>
+                        <th>База данных</th>
+                        <th>Результат</th>
+                        </b>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for key, val in results.items() %}
+                    <tr>
+                        <td>{{key}}</td>
+                        <td>{{val}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </h4>
+    </div>
+    {% endif %}
+
+</main>
+{% endblock %}
+
