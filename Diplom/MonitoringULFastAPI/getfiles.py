@@ -13,11 +13,22 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium_stealth import stealth
+from fastapi import FastAPI, Request, Form
+import typing
 from downloader import *
 from settings import *
 from parser import *
 
-def search_results(search):
+def flash(request: Request, message: typing.Any, category: str = "primary") -> None:
+   if "_messages" not in request.session:
+       request.session["_messages"] = []
+       request.session["_messages"].append({"message": message, "category": category})
+
+def get_flashed_messages(request: Request):
+    print(request.session)
+    return request.session.pop("_messages") if "_messages" in request.session else []
+
+def search_results(search, request: Request = None):
     results = {}
     file_names = {
         "aaa.txt": "Для теста", 
@@ -56,7 +67,7 @@ def search_results(search):
         print(results)
 
     if not results:
-        return 'По данному ИНН ничего не найдено!'
+        flash(request, 'По данному ИНН ничего не найдено!')
 
     return results
 

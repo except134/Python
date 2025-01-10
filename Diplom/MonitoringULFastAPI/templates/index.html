@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block content %}
+{% from "_formhelpers.html" import render_field %}
 <main>
     <form id="searchForm">
         <h4>Введите ИНН:</h4>
@@ -15,6 +16,20 @@
         <p></p>
         <button type="submit" class="btn">Найти</button>
     </form>
+
+    {% with messages = get_flashed_messages(request) %}
+    {% if messages %}
+    <ul class="flashes">
+        {% for message in messages %}
+        <p></p>
+        <h1>
+        <li>{{ message }}</li>
+        </h1>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+
     {% if results %}
     <div class="px-5 mx-5">
         <h1>Результаты:</h1>

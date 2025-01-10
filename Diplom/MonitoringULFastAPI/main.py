@@ -7,6 +7,8 @@ from pydantic import BaseModel
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from threading import Thread, Lock
+from starlette.middleware import Middleware
+from starlette.middleware.sessions import SessionMiddleware
 import uvicorn
 from settings import *
 from getfiles import *
@@ -15,8 +17,14 @@ from tgbot import *
 
 templates = Jinja2Templates(directory="templates")
 
-app = FastAPI()
+middleware = [
+    Middleware(SessionMiddleware, secret_key=WEB_SECRET_KEY)
+]
+
+app = FastAPI(middleware=middleware)
 app.mount("/static", StaticFiles(directory="static"), name="static")
+
+templates.env.globals['get_flashed_messages'] = get_flashed_messages
 
 router_root = APIRouter(prefix='', tags=['root'])
 
@@ -25,7 +33,7 @@ router_root = APIRouter(prefix='', tags=['root'])
 async def get_home(request: Request, INN: str = ''):
     results = {}
     if INN:
-        results = search_results(INN)
+        results = search_results(INN, request)
     return templates.TemplateResponse("index.html", {"request": request, "results": results, "title": 'Мониторинг ЮЛ', "year": datetime.now().year})
 
 @router_root.get("/contact", name='contact', response_class=HTMLResponse)
