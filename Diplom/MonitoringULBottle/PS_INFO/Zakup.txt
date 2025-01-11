@@ -5,6 +5,24 @@
     <link>/epz/dishonestsupplier/search/results.html</link>
     <description />
     <item>
+      <title>Запись №РНПО.334352-22 в  ПП РФ 615 (Капитальный ремонт)</title>
+      <link>https://zakupki.gov.ru/epz/dishonestsupplier/view/info.html?id=72012</link>
+      <description>&lt;strong&gt;Параметры поиска: &lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Отображать сведения из: &lt;/strong&gt;Реестр недобросовестных поставщиков (подрядчиков, исполнителей) (44-ФЗ), Реестр недобросовестных поставщиков (223-ФЗ), Реестр недобросовестных подрядных организаций (ПП РФ 615)&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Найденный результат:&lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Реестровый номер: &lt;/strong&gt;РНПО.334352-22&lt;br/&gt;&lt;strong&gt;Относится к: &lt;/strong&gt; ПП РФ 615 (Капитальный ремонт)&lt;br/&gt;&lt;strong&gt;Наименование(ФИО) недобросовестного поставщика: &lt;/strong&gt;ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МЕ"&lt;br/&gt;&lt;strong&gt;ИНН (аналог ИНН): &lt;/strong&gt;3403023197&lt;br/&gt;&lt;strong&gt;Включено: &lt;/strong&gt;11.01.2022&lt;br/&gt;&lt;strong&gt;Обновлено: &lt;/strong&gt;11.01.2025&lt;br/&gt;&lt;strong&gt;Исключено: &lt;/strong&gt;11.01.2025&lt;br/&gt;&lt;strong&gt;Статус записи: &lt;/strong&gt;Исключено&lt;br/&gt;</description>
+      <pubDate>Mon, 10 Jan 2022 21:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Запись №25000131 в РНП 44-ФЗ</title>
+      <link>https://zakupki.gov.ru/epz/dishonestsupplier/view/info.html?id=114168</link>
+      <description>&lt;strong&gt;Параметры поиска: &lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Отображать сведения из: &lt;/strong&gt;Реестр недобросовестных поставщиков (подрядчиков, исполнителей) (44-ФЗ), Реестр недобросовестных поставщиков (223-ФЗ), Реестр недобросовестных подрядных организаций (ПП РФ 615)&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Найденный результат:&lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Реестровый номер: &lt;/strong&gt;25000131&lt;br/&gt;&lt;strong&gt;Относится к: &lt;/strong&gt;44-ФЗ&lt;br/&gt;&lt;strong&gt;Наименование(ФИО) недобросовестного поставщика: &lt;/strong&gt;ХОШБАШ ОЗАН ШЮКРЮ СОНЕРОВИЧ&lt;br/&gt;&lt;strong&gt;ИНН (аналог ИНН): &lt;/strong&gt;181603275346&lt;br/&gt;&lt;strong&gt;Включено: &lt;/strong&gt;10.01.2025&lt;br/&gt;&lt;strong&gt;Обновлено: &lt;/strong&gt;10.01.2025&lt;br/&gt;&lt;strong&gt;Планируемая дата исключения: &lt;/strong&gt;03.01.2027&lt;br/&gt;&lt;strong&gt;Статус записи: &lt;/strong&gt;Размещено&lt;br/&gt;</description>
+      <pubDate>Fri, 10 Jan 2025 17:35:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>Запись №25000130 в РНП 44-ФЗ</title>
+      <link>https://zakupki.gov.ru/epz/dishonestsupplier/view/info.html?id=114167</link>
+      <description>&lt;strong&gt;Параметры поиска: &lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Отображать сведения из: &lt;/strong&gt;Реестр недобросовестных поставщиков (подрядчиков, исполнителей) (44-ФЗ), Реестр недобросовестных поставщиков (223-ФЗ), Реестр недобросовестных подрядных организаций (ПП РФ 615)&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Найденный результат:&lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Реестровый номер: &lt;/strong&gt;25000130&lt;br/&gt;&lt;strong&gt;Относится к: &lt;/strong&gt;44-ФЗ&lt;br/&gt;&lt;strong&gt;Наименование(ФИО) недобросовестного поставщика: &lt;/strong&gt;ХОШБАШ ОЗАН ШЮКРЮ СОНЕРОВИЧ&lt;br/&gt;&lt;strong&gt;ИНН (аналог ИНН): &lt;/strong&gt;181603275346&lt;br/&gt;&lt;strong&gt;Включено: &lt;/strong&gt;10.01.2025&lt;br/&gt;&lt;strong&gt;Обновлено: &lt;/strong&gt;10.01.2025&lt;br/&gt;&lt;strong&gt;Планируемая дата исключения: &lt;/strong&gt;03.01.2027&lt;br/&gt;&lt;strong&gt;Статус записи: &lt;/strong&gt;Размещено&lt;br/&gt;</description>
+      <pubDate>Fri, 10 Jan 2025 17:31:58 GMT</pubDate>
+    </item>
+    <item>
       <title>Запись №25000129 в РНП 44-ФЗ</title>
       <link>https://zakupki.gov.ru/epz/dishonestsupplier/view/info.html?id=114166</link>
       <description>&lt;strong&gt;Параметры поиска: &lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Отображать сведения из: &lt;/strong&gt;Реестр недобросовестных поставщиков (подрядчиков, исполнителей) (44-ФЗ), Реестр недобросовестных поставщиков (223-ФЗ), Реестр недобросовестных подрядных организаций (ПП РФ 615)&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Найденный результат:&lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Реестровый номер: &lt;/strong&gt;25000129&lt;br/&gt;&lt;strong&gt;Относится к: &lt;/strong&gt;44-ФЗ&lt;br/&gt;&lt;strong&gt;Наименование(ФИО) недобросовестного поставщика: &lt;/strong&gt;ПЕРВУНИНСКИЙ АЛЕКСЕЙ СЕРГЕЕВИЧ&lt;br/&gt;&lt;strong&gt;ИНН (аналог ИНН): &lt;/strong&gt;440124930252&lt;br/&gt;&lt;strong&gt;Включено: &lt;/strong&gt;10.01.2025&lt;br/&gt;&lt;strong&gt;Обновлено: &lt;/strong&gt;10.01.2025&lt;br/&gt;&lt;strong&gt;Планируемая дата исключения: &lt;/strong&gt;16.01.2027&lt;br/&gt;&lt;strong&gt;Статус записи: &lt;/strong&gt;Размещено&lt;br/&gt;&lt;strong&gt;Номер реестровой записи ЕРУЗ: &lt;/strong&gt;24062927&lt;br/&gt;</description>
@@ -1187,24 +1205,6 @@
       <link>https://zakupki.gov.ru/epz/dishonestsupplier/view/info.html?id=83646</link>
       <description>&lt;strong&gt;Параметры поиска: &lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Отображать сведения из: &lt;/strong&gt;Реестр недобросовестных поставщиков (подрядчиков, исполнителей) (44-ФЗ), Реестр недобросовестных поставщиков (223-ФЗ), Реестр недобросовестных подрядных организаций (ПП РФ 615)&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Найденный результат:&lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Реестровый номер: &lt;/strong&gt;23000081&lt;br/&gt;&lt;strong&gt;Относится к: &lt;/strong&gt;44-ФЗ&lt;br/&gt;&lt;strong&gt;Наименование(ФИО) недобросовестного поставщика: &lt;/strong&gt;Общество с ограниченной ответственностью "Рента"&lt;br/&gt;&lt;strong&gt;ИНН (аналог ИНН): &lt;/strong&gt;6679140619&lt;br/&gt;&lt;strong&gt;Включено: &lt;/strong&gt;10.01.2023&lt;br/&gt;&lt;strong&gt;Обновлено: &lt;/strong&gt;03.01.2025&lt;br/&gt;&lt;strong&gt;Исключено: &lt;/strong&gt;03.01.2025&lt;br/&gt;&lt;strong&gt;Статус записи: &lt;/strong&gt;Исключено&lt;br/&gt;</description>
       <pubDate>Tue, 10 Jan 2023 09:24:39 GMT</pubDate>
-    </item>
-    <item>
-      <title>Запись №23000070 в РНП 44-ФЗ</title>
-      <link>https://zakupki.gov.ru/epz/dishonestsupplier/view/info.html?id=83635</link>
-      <description>&lt;strong&gt;Параметры поиска: &lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Отображать сведения из: &lt;/strong&gt;Реестр недобросовестных поставщиков (подрядчиков, исполнителей) (44-ФЗ), Реестр недобросовестных поставщиков (223-ФЗ), Реестр недобросовестных подрядных организаций (ПП РФ 615)&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Найденный результат:&lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Реестровый номер: &lt;/strong&gt;23000070&lt;br/&gt;&lt;strong&gt;Относится к: &lt;/strong&gt;44-ФЗ&lt;br/&gt;&lt;strong&gt;Наименование(ФИО) недобросовестного поставщика: &lt;/strong&gt;ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ИНВЕСТМЕДТОРГ"&lt;br/&gt;&lt;strong&gt;ИНН (аналог ИНН): &lt;/strong&gt;6685202687&lt;br/&gt;&lt;strong&gt;Включено: &lt;/strong&gt;10.01.2023&lt;br/&gt;&lt;strong&gt;Обновлено: &lt;/strong&gt;03.01.2025&lt;br/&gt;&lt;strong&gt;Исключено: &lt;/strong&gt;03.01.2025&lt;br/&gt;&lt;strong&gt;Статус записи: &lt;/strong&gt;Исключено&lt;br/&gt;</description>
-      <pubDate>Tue, 10 Jan 2023 05:53:35 GMT</pubDate>
-    </item>
-    <item>
-      <title>Запись №22009154 в РНП 44-ФЗ</title>
-      <link>https://zakupki.gov.ru/epz/dishonestsupplier/view/info.html?id=83461</link>
-      <description>&lt;strong&gt;Параметры поиска: &lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Отображать сведения из: &lt;/strong&gt;Реестр недобросовестных поставщиков (подрядчиков, исполнителей) (44-ФЗ), Реестр недобросовестных поставщиков (223-ФЗ), Реестр недобросовестных подрядных организаций (ПП РФ 615)&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Найденный результат:&lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Реестровый номер: &lt;/strong&gt;22009154&lt;br/&gt;&lt;strong&gt;Относится к: &lt;/strong&gt;44-ФЗ&lt;br/&gt;&lt;strong&gt;Наименование(ФИО) недобросовестного поставщика: &lt;/strong&gt;ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МИСТЕРИА ФЛОРИС"&lt;br/&gt;&lt;strong&gt;ИНН (аналог ИНН): &lt;/strong&gt;5047180862&lt;br/&gt;&lt;strong&gt;Включено: &lt;/strong&gt;29.12.2022&lt;br/&gt;&lt;strong&gt;Обновлено: &lt;/strong&gt;03.01.2025&lt;br/&gt;&lt;strong&gt;Исключено: &lt;/strong&gt;03.01.2025&lt;br/&gt;&lt;strong&gt;Статус записи: &lt;/strong&gt;Исключено&lt;br/&gt;</description>
-      <pubDate>Thu, 29 Dec 2022 12:01:27 GMT</pubDate>
-    </item>
-    <item>
-      <title>Запись №22009164 в РНП 44-ФЗ</title>
-      <link>https://zakupki.gov.ru/epz/dishonestsupplier/view/info.html?id=83471</link>
-      <description>&lt;strong&gt;Параметры поиска: &lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Отображать сведения из: &lt;/strong&gt;Реестр недобросовестных поставщиков (подрядчиков, исполнителей) (44-ФЗ), Реестр недобросовестных поставщиков (223-ФЗ), Реестр недобросовестных подрядных организаций (ПП РФ 615)&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Найденный результат:&lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;Реестровый номер: &lt;/strong&gt;22009164&lt;br/&gt;&lt;strong&gt;Относится к: &lt;/strong&gt;44-ФЗ&lt;br/&gt;&lt;strong&gt;Наименование(ФИО) недобросовестного поставщика: &lt;/strong&gt;ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "АВАНГАРД"&lt;br/&gt;&lt;strong&gt;ИНН (аналог ИНН): &lt;/strong&gt;9722011632&lt;br/&gt;&lt;strong&gt;Включено: &lt;/strong&gt;29.12.2022&lt;br/&gt;&lt;strong&gt;Обновлено: &lt;/strong&gt;03.01.2025&lt;br/&gt;&lt;strong&gt;Исключено: &lt;/strong&gt;03.01.2025&lt;br/&gt;&lt;strong&gt;Статус записи: &lt;/strong&gt;Исключено&lt;br/&gt;&lt;strong&gt;Номер реестровой записи ЕРУЗ: &lt;/strong&gt;22052052&lt;br/&gt;</description>
-      <pubDate>Thu, 29 Dec 2022 12:32:03 GMT</pubDate>
     </item>
   </channel>
 </rss>
