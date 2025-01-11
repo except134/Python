@@ -60,8 +60,8 @@ def search_results(search):
 
 #        ret = get_inn_ofd(inn, ret)
 #        if app.config['PRINT_DEBUG']:
-#            print(f"Единая информационная система в сфере закупок: {inn} - {ret}")
-#        results['Единая информационная система в сфере закупок'] = "Найден" if ret else "Не найден"
+#            print(f"Единый реестр субъектов малого и среднего предпринимательства: {inn} - {ret}")
+#        results['Единый реестр субъектов малого и среднего предпринимательства'] = "Найден" if ret else "Не найден"
 
     if app.config['PRINT_DEBUG']:
         print(results)

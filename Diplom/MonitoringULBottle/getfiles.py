@@ -49,9 +49,9 @@ def search_results(search):
         results['ЕГРЮЛ'] = "Найден" if ret else "Не найден"
 
 #        ret = get_inn_ofd(inn, ret)
-#        if app.config['PRINT_DEBUG']:
-#            print(f"Единая информационная система в сфере закупок: {inn} - {ret}")
-#        results['Единая информационная система в сфере закупок'] = "Найден" if ret else "Не найден"
+#        if PRINT_DEBUG:
+#            print(f"Единый реестр субъектов малого и среднего предпринимательства: {inn} - {ret}")
+#        results['Единый реестр субъектов малого и среднего предпринимательства'] = "Найден" if ret else "Не найден"
 
     if PRINT_DEBUG:
         print(results)
